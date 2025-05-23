@@ -5,8 +5,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
     const email = e.target.email.value;
     const message = e.target.message.value;
   
-    // Replace this URL with your actual API Gateway endpoint later
-    const apiUrl = 'https://your-api-id.execute-api.region.amazonaws.com/prod/send';
+    const apiUrl = 'https://7d1n3jh6vh.execute-api.us-east-2.amazonaws.com/default/handleContactForm';
   
     try {
       const response = await fetch(apiUrl, {
